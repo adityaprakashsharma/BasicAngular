@@ -1,0 +1,57 @@
+.contentSearch {
+	background: url(../../assets/notebook.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+	.contentSearch-container {
+		display: flex;
+	    height: 100%;
+		.div-1 {
+			width: 60%;
+			padding: 10px;
+			color: #fff;
+//			background: rgb(0, 0, 0); /* Fallback color */
+//			background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		}
+		.div-2 {
+			color: #fff;
+			background: rgb(0, 0, 0); /* Fallback color */
+			background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+			width: 40%;
+			padding: 10px;
+		}
+	}
+}
+
+@keyframes glowing {
+  0% { background-color: transparent; box-shadow: 0 0 3px #f1f1f1; transform: scale(1.07);}
+  50% { background-color: transparent; box-shadow: 0 0 40px #e2e2e2; transform: scale(1.03); }
+  100% { background-color: transparent; box-shadow: 0 0 3px #f1f1f1; transform: scale(1.09);}
+
+}
+
+button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: #fff;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+button:hover {
+
+}
+

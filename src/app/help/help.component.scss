@@ -1,0 +1,67 @@
+.profile-container {
+	display: flex;
+	height: 400px;
+	flex-direction: row;
+	.profile-container-div {
+		float: left;
+		width: 50%;
+		padding: 8px;
+		position: relative;
+
+		h3 {
+			text-transform: uppercase;
+			transform: rotate(-90deg);	
+			font-size: 40px;
+			color: #fff;
+			position: absolute;
+		    right: 10px;
+		    bottom: 50px;
+		}
+		&.div-1 {
+			
+			//background-color: #F3D250;
+			background-image:  url(../../assets/img_avatar2.png);
+    		background-size: cover;
+ 			color: #f1f1f1;
+			//background-color: #F3D250;
+		}
+		&.div-2 {
+			background-image:  url(../../assets/pexels-photo-1532621.jpeg);
+	    	background-size: cover;
+			background-color: #90CCF4;
+			color: #f1f1f1;
+		}
+
+		&.div-3 {
+			background-color: #F78888;
+			background-image:  url(../../assets/desktop1.jpg);
+	    	background-size: cover;
+	    	color: #f1f1f1;
+		}
+ 		.profile-sub-item {
+			opacity: 0;
+		} 
+		button {
+			border-radius: 50px;
+		    background-color: #f8f8f8;
+		    margin-bottom: 10px;
+		    padding: 8px;
+		    display: block;
+		    float: right;
+		    box-shadow: 2px 2px 2px rgb(0,0,0,.5);
+		    transition: all .5s ease;
+		    border: transparent;
+		}
+	}
+}
+
+div.profile-container > div:hover {
+	transition: all .5s ease;
+	width: 90%;
+ 	.profile-sub-item {
+		opacity: 1;
+	} 
+	h3 {
+		opacity: 0;
+	}
+}

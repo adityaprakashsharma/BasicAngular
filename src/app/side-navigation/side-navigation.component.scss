@@ -1,0 +1,155 @@
+ .side-nav .side-nav-link {
+  display: flex;
+  padding : 16px;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .side-nav-link-text{
+  		display: none;
+  }
+}
+.side-nav .side-nav-link:hover {
+  background-color: #eee;
+  transition: all .5s ease;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 8px 16px 0 rgba(0, 0, 0, 0.4);
+  transition: all .5s ease;
+}
+.side-nav {
+   float: left;
+   width: 100%;
+   height: auto;
+   background-color: #ccc;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   transition: all .5s ease;
+   @media screen and (max-width: 700px){
+   	width: 0px;
+   }
+}
+.active {
+  background-color: #eee; /* Add an active/current color */
+  border: 1px solid #000;
+}
+
+.content {
+	float: left;
+	width: 100%;
+	padding: 20px;
+  	background-color: #eee;
+
+	@media screen and (max-width: 700px) {
+		width: 100%;
+	}
+}
+
+.expand {
+	width: 100%;
+	transition: all .5s ease;
+	@media screen and (max-width: 700px) {
+		width: 100%;
+		display: block;
+		transition: display .5s ease;
+	}
+}
+
+.side-nav.expand .side-nav-link {
+
+	.side-nav-link-text{
+  		display: block;
+  		padding: 0px 8px;
+  }
+}
+
+.closed {
+//	width: 50px;
+	transition: all .5s ease;
+}
+.display-container {
+	width: 100%;
+	display: flex;
+
+}
+li.active.university-sub-link {
+	list-style: none;
+	display: block;
+}
+
+footer {
+      height: 120px;
+      background-color: #000;
+      color: #fff;
+
+    }
+    .page-header {
+      position: sticky;
+      top: 0px;
+    }
+    .sub-menu {
+      margin: 10px;
+    }
+    .sub-menu-item {
+      display: block;
+      margin: 10px;
+    }
+
+    .footer-menu {
+          padding: 10px 10px 0px 10px;
+          margin: 0px;
+    }
+
+    .footer-menu-item {
+      display: inline;
+        float: left;
+        margin: 10px 50px 0px 50px;
+    }
+
+
+
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+	background-color: #ccc;
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    height: auto;
+  }
+}
+.side-nav-link-sub-menu {
+	margin: 0px;
+    list-style: none;
+    float: left;
+    padding: 16px 0px;
+    .side-nav-link-sub-menu-element {
+	    padding: 16px 16px;
+	}	
+	.side-nav-link-sub-menu-element:hover {
+	     background-color: #6a67df;
+	     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 8px 16px 0 rgba(0, 0, 0, 0.4);
+		 transition: all .5s ease;
+	}	
+}
+
+.asideblock {
+	width: 20%;
+	background-color: #f1f1f1;
+	@media screen and (max-width: 700px) {
+		display: none;
+	}
+
+	.asideblock-div {
+		margin:	24px 0px;
+	}
+}

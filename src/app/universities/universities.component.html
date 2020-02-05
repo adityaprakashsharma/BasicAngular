@@ -1,0 +1,16 @@
+<p>{{textValue | summary}}</p>
+<div class="university" >
+	<ul class="university-list" *ngIf = "recommended">
+		<h2 class="h2-class">Recommended Universities</h2>
+		<li *ngFor = 'let university of universities.recommended'><app-university [universityObj]=university></app-university></li>
+	</ul>	
+	
+	<ul class="university-list" *ngIf = "target">
+		<h2 class="h2-class">Targeted Universities</h2>
+		<li *ngFor = 'let university of universities.targeted' ><app-university [universityObj]=university></app-university></li>
+	</ul>
+	                                                                     
+</div>
+
+
+

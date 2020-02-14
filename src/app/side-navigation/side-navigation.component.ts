@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { NavigationServiceService } from '../services/navigation-service.service';
+
 
 @Component({
   selector: 'app-side-navigation',
@@ -7,12 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavigationComponent implements OnInit {
   menuItemClicked: boolean = false;
-  constructor() { }
+  subscription: Subscription;
+  constructor(private navService : NavigationServiceService) { 
+    this.subscription = this.navService.getSideNavState().subscribe( isOpen => {
+      if(isOpen){
+        document.getElementsByClassName("side-nav")[0].classList.toggle("expand");
+      }
+    })
+  }
 
   ngOnInit() {
   }
 
   handleLinkClick(event){
-  	document.getElementsByClassName("side-nav")[0].classList.toggle("expand");
+  //	document.getElementsByClassName("side-nav")[0].classList.toggle("expand");
   }
 }

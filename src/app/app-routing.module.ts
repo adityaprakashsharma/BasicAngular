@@ -11,8 +11,8 @@ import { AllUniversityComponent } from './all-university/all-university.componen
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
- { path: '', component: LandingComponent },
- { path: 'skeleton', component: SkeletonComponent,
+
+ { path: '', component: SkeletonComponent,
 	children: [
 		{ path: 'home', component: HomeComponentComponent },
 		{ path: 'profile', component: ProfileComponent },
